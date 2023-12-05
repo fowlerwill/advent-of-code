@@ -7,6 +7,10 @@ compile: clean
 	@echo "Compiling..."
 	javac -d out *.java 
 
-run: compile
+part1: compile
 	@echo "Running..."
-	java -cp out Main
+	java -cp out PartOne
+
+part2: compile
+	@echo "Running..."
+	java -cp out PartTwo
